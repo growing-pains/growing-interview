@@ -1,5 +1,7 @@
 package algorithm
 
+import java.util.*
+
 class BOJ10828 {
     private val stack = mutableListOf<Int>()
     // 1 ~ 100_000
@@ -16,7 +18,7 @@ class BOJ10828 {
 
     private fun execute(inputCommand: String) {
         val splitCommand = inputCommand.split(" ")
-        val command = COMMAND.valueOf(splitCommand[0].toUpperCase())
+        val command = COMMAND.valueOf(splitCommand[0].uppercase())
 
         when (command) {
             COMMAND.PUSH -> stack.add(splitCommand[1].toInt())
