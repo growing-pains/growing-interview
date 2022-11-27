@@ -1,7 +1,10 @@
-package src.algorithm
+package src.algorithm.data_structure
 
+/**
+ * https://www.acmicpc.net/problem/10845
+ * 큐
+ */
 class BOJ10845 {
-
     fun solution(input: String) {
         val queue = Queue()
         val splitInput = input.split("\n")

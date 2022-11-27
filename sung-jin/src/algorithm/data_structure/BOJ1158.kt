@@ -1,9 +1,12 @@
-package src.algorithm
+package src.algorithm.data_structure
 
 import java.util.*
 
+/**
+ * https://www.acmicpc.net/problem/1158
+ * 조세푸스
+ */
 class BOJ1158 {
-
     fun solution(input: String) {
         val (numberOfPeople, josephusCount) = input.split(" ").map { it.toInt() }
         val josephus = LinkedList((1..numberOfPeople).toList())
@@ -16,7 +19,7 @@ class BOJ1158 {
         println(result.joinToString(", ", "<", ">"))
     }
 
-    fun leave(josephus: Queue<Int>, josephusCount: Int): Int {
+    private fun leave(josephus: Queue<Int>, josephusCount: Int): Int {
         repeat(josephusCount - 1) {
             josephus.offer(josephus.poll())
         }

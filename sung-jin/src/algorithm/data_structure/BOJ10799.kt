@@ -1,9 +1,12 @@
-package src.algorithm
+package src.algorithm.data_structure
 
 import java.util.*
 
+/**
+ * https://www.acmicpc.net/problem/10799
+ * 쇠막대기
+ */
 class BOJ10799 {
-
     fun solution(input: String) {
         val leftParenthesis = Stack<PARENTHESIS>()
         var answer = 0
