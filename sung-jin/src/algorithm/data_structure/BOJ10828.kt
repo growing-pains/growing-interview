@@ -1,7 +1,9 @@
-package algorithm
+package src.algorithm.data_structure
 
-import java.util.*
-
+/**
+ * https://www.acmicpc.net/problem/10828
+ * 스택
+ */
 class BOJ10828 {
     private val stack = mutableListOf<Int>()
     // 1 ~ 100_000

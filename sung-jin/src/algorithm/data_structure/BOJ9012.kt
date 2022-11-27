@@ -1,7 +1,11 @@
-package src.algorithm
+package src.algorithm.data_structure
 
 import java.util.*
 
+/**
+ * https://www.acmicpc.net/problem/9012
+ * 괄호
+ */
 class BOJ9012 {
     fun solution(input: String) {
         val splitInput = input.split("\n")

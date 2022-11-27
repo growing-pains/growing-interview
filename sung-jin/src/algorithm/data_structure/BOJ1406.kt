@@ -1,9 +1,12 @@
-package src.algorithm
+package src.algorithm.data_structure
 
 import java.util.*
 
+/**
+ * https://www.acmicpc.net/problem/1406
+ * 에디터
+ */
 class BOJ1406 {
-
     fun solution(input: String) {
         val splitInput = input.split("\n")
         val leftString = Stack<Char>()
